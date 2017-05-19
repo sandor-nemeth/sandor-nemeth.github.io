@@ -25,6 +25,8 @@ plugins {
     id 'idea'
     id 'application'
     id 'org.jetbrains.kotlin.jvm' version '1.1.2-2'
+    id 'com.github.johnrengelman.shadow' version '2.0.0'
+
 }
 
 sourceCompatibility = '1.8'
@@ -70,9 +72,10 @@ dependencies {
     testCompile "io.vertx:vertx-unit:$vertx_version"
     testCompile 'org.assertj:assertj-core:3.7.0'
 }
-
-
 ```
+
+I also use the `shadow` plugin from [johnrengelman/shadow](https://github.com/johnrengelman/shadow)
+to package the complete application into a single fat-jar.
 
 Now that we are all set up, let's get started with the application. First
 create an entry point for the application:
@@ -136,3 +139,13 @@ There are a couple of things happening here:
   defaulting to `8080`, if it isn't configured
 - lastly we create a `Router` instance, and handle a `GET` call to `/`
   where we just return `Hello world!`
+
+And finally let't test the application. Run the build with `gradle build`,
+and then run it: `java -jar build/libs/abeona-backend-all.jar`.
+
+We can now send our first request:
+
+```bash
+# curl -XGET http://localhost:8080
+Hello world!
+```
