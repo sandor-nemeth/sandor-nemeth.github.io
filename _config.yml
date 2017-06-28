@@ -22,3 +22,7 @@ version:          1.0.0
 
 github:
   repo:           https://github.com/sandor-nemeth/sandor-nemeth.github.io
+
+gems:
+  - jekyll-paginate
+  - jekyll-gist
