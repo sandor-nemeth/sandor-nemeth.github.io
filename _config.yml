@@ -1,28 +1,54 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
+title: Weblog
+description: A weblog
+author: Sandor Nemeth
+github: https://github.com/sandor-nemeth
+about: Java developer, interested in the cloud
+disqus_shortname: Weblog
+google_analytics: UA-XXXXXXXX-Y
+avatar_url: /static/img/avatar.jpg
 
-# Permalinks
-permalink:        pretty
+enableTags: true
+tagarray: []
 
-# Setup
-title:            "Sandor Nemeth's blog"
-tagline:          'Developer weblog'
-description:      "A developer's weblog"
-baseurl:          /
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
 
-author:
-  name:           'Sandor Nemeth'
-  url:            https://twitter.com/sandor_nemeth
+social:
+    - icon: fa-facebook
+      link: "https://www.facebook.com/sandor.nemeth"
+    - icon: fa-twitter
+      link: "https://twitter.com/sandor_nemeth"
+    - icon: fa-linkedin
+      link: "https://www.linkedin.com/in/sandornemeth/"
+    - icon: fa-stack-exchange
+      link: "https://stackoverflow.com/users/684465/sandor-nemeth"
+    - icon: fa-github
+      link: "https://github.com/sandor-nemeth"
 
-paginate:         5
+share:
+  twitter_username: sandor-nemeth
 
-# Custom vars
-version:          1.0.0
+urls:
+    - text: About Me
+      url: /about/
+    - text: My Projects
+      url: /projects/
+    - text: XML Feed
+      url: /feed.xml
 
-github:
-  repo:           https://github.com/sandor-nemeth/sandor-nemeth.github.io
-
+url: "https://sandor-nemeth.github.io"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
 gems:
   - jekyll-paginate
   - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
