@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-{% for post in site.posts %}
+<header class="page-header">
+  <h1 class="page-title">Category: Java</h1>
+</header>
+{% for post in site.categories.java %}
 <article class="post type-post status-publish format-standard hentry">
   <header class="entry-header">
     <h2 class="entry-title">
@@ -9,7 +12,7 @@ layout: default
     </h2>
   </header>
   <div class="entry-content">
-    <p>{% if post.excerpt %}{{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}{% endif %}  <a href="{{ post.url | prepend: site.baseurl }}" class="more-link"><span class="screen-reader-text">{{ post.title }}</span> Read more...</a></p>
+    <p>{{ post.content | strip_html | truncatewords: 160 }}  <a href="{{ post.url | prepend: site.baseurl }}" class="more-link"><span class="screen-reader-text">{{ post.title }}</span> Read more</a></p>
   </div>
   <footer class="entry-footer">
     <span class="posted-on">
