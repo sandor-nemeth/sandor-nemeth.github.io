@@ -1,0 +1,64 @@
+<div id="sidebar" class="sidebar">
+  <header id="masthead" class="site-header" role="banner">
+    <div class="site-branding">
+      <h1 class="site-title">
+        <a href="{{ site.url }}" rel="home">{{ site.title }}</a>
+      </h1>
+      <p class="site-description">{{ site.description }}</p>
+      <button class="secondary-toggle">Menus and widgets</button>
+    </div>
+  </header>
+  <div id="secondary" class="secondary">
+    <div id="widget-area" class="widget-area" role="complementary">
+      <aside class="widget widget_categories">
+        <h2 class="widget-title">Categories</h2>
+        <ul>
+          <li>
+            <a href="{{ "/category.html" | prepend: site.baseurl }}" >All posts</a>
+          </li>
+          {% assign categories = site.categories | sort %}
+           {% for category in categories %}
+            <li>
+               <a href="/category/{{ category | first | slugify | prepend: site.baseurl }}.html">
+                       {{ category[0] | replace:'-', ' ' }}
+               </a>
+           </li>
+           {% endfor %}
+        </ul>
+      </aside>
+      <aside class="widget widget_recent_entries">
+        <h2 class="widget-title">Recent entries</h2>
+        <ul>
+          {% for post in site.posts limit:10 %}
+          <li>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </aside>
+      <aside class="widget widget_meta">
+        <h2 class="widget-title">Other</h2>
+        <ul>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="mailto:{{ site.email }}">E-mail</a>
+          </li>
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">Github</a>
+          </li>
+          <li>
+            <a href="https://facebook.com/{{ site.facebook_username }}">Facebook</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
+          </li>
+          <li>
+            <a href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe <abbr title="Really Simple Syndication">via RSS</abbr></a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</div>
