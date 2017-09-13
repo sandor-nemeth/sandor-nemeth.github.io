@@ -1,54 +1,29 @@
-title: Weblog
-description: A weblog
-author: Sandor Nemeth
-github: https://github.com/sandor-nemeth
-about: Java developer, interested in the cloud
-disqus_shortname: Weblog
-google_analytics: UA-XXXXXXXX-Y
-avatar_url: /static/img/avatar.jpg
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-enableTags: true
-tagarray: []
+# Site settings
+title: Your awesome title
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+permalink: /article/:categories/:year/:month/:day/:title
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+facebook_username: your_facebook_username
+twitter_username: your_twitter_username
+github_username:  your_github_username
+generator:  Your name
 
-collections:
-  project:
-    output: true
-    permalink: /project/:path/
-
-social:
-    - icon: fa-facebook
-      link: "https://www.facebook.com/sandor.nemeth"
-    - icon: fa-twitter
-      link: "https://twitter.com/sandor_nemeth"
-    - icon: fa-linkedin
-      link: "https://www.linkedin.com/in/sandornemeth/"
-    - icon: fa-stack-exchange
-      link: "https://stackoverflow.com/users/684465/sandor-nemeth"
-    - icon: fa-github
-      link: "https://github.com/sandor-nemeth"
-
-share:
-  twitter_username: sandor-nemeth
-
-urls:
-    - text: About Me
-      url: /about/
-    - text: My Projects
-      url: /projects/
-    - text: XML Feed
-      url: /feed.xml
-
-url: "https://sandor-nemeth.github.io"
-baseurl: ""
-paginate: 20
-per_page: 20
-paginate_path: "/page/:num/"
+# Build settings
 markdown: kramdown
-gems:
-  - jekyll-paginate
-  - jekyll-gist
 
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
+# Plugins
+gems:
+  - jemoji
+  - jekyll-sitemap
