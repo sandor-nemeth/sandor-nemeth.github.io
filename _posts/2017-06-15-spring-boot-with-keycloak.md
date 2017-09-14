@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Secure a Spring Boot Rest app with Spring Security and Keycloak
+published: true
+categories:
+  - java
+  - spring
 ---
 
 Today I wanted to explore [Keycloak](http://www.keycloak.org/), and decided
