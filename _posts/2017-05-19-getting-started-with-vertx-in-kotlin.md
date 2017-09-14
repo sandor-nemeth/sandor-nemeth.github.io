@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Getting started with Vertx in Kotlin
+published: true
+categories:
+  - vertx
+  - kotlin
 ---
 
 This time I decided to take a good look at [Vertx](https://vertx.io), and as
