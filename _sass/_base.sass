@@ -1,0 +1,40 @@
+// Generic styles
+html, body
+    margin: 0
+    padding: 0
+    background-color: $bg-color
+    font-family: $body-font
+    font-size: 20px
+    line-height: 1.5
+    color: $black
+    height: 100%
+
+img 
+    max-width: $content-width
+    
+h1, h2, h3, h4, h5, h6
+    font-family: $header-font
+
+.container 
+    width: $content-width
+    margin: 0 auto
+    padding: 5rem 0
+    
+a,a:visited
+    text-decoration: none
+    color: $text-color
+    border-bottom: 2px solid $primary
+    
+    &:hover
+        color: lighten($text-color, 35%)
+        
+blockquote
+    
+    border-left: 4px solid $alternative-color
+    margin: 1em 0
+    padding: 0 1em
+    
+    p
+        font-style: italic
+        color: $alternative-color
+    
