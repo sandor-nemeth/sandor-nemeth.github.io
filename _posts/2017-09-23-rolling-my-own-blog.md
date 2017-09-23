@@ -1,5 +1,5 @@
 ---
-published: false
+layout: post
 title: Rolling my own blog
 ---
 Somehow I am never really happy with my blog design, and I thought it'd be a good idea to roll my own design. It seemed a good opportunity to see how I can develop my own site with [Jekyll] on [Github Pages]. And now that it is online, I wanted to share the process. It is far from complete, but right now I think it is a good place to start.
