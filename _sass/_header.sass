@@ -2,12 +2,20 @@
   font-family: $header-font
   
   .container 
-    padding: 4.5rem
+    padding: 3rem
+
+    #avatar
+      float: left
+      margin-right: 2rem
+
+      img
+        border-radius: 50%
+        width: 4rem
+        padding: 1rem 0
   
   h1
     margin: 0
     font-size: 2rem
-    text-align: center
     
     & a, a:visited
       color: white
@@ -16,6 +24,10 @@
     & > a:hover
       color: white
       border-bottom: 2px solid $primary
+    #title-description
+      color: white
+      font-size: .7rem
+      font-weight: 300
       
 .page
   header

@@ -1,8 +1,12 @@
 title: devlog
+description: >
+  This is the place where I dump my thoughts. All things published here are mine, 
+  and do not represent any organizations I am/was associated with. 
 email: sandor.nemeth.1986@gmail.com
 twitter_username: sandor_nemeth
 github_username:  sandor-nemeth
 repository: sandor-nemeth/sandor-nemeth.github.io
+avatar_url: /assets/images/avatar.jpg
 
 # Build settings
 markdown: kramdown

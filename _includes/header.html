@@ -1,7 +1,13 @@
 <header id="header">
     <div class="container">
-        <h1>
-            <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-        </h1>
+        <div id="title">
+            <div id="avatar">
+                <img src="{{ site.baseurl }}{{ site.avatar_url }}" alt="avatar" />
+            </div>
+            <h1>
+                <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+                <div id="title-description">{{ site.description }}</div>
+            </h1>
+        </div>
     </div>
 </header>
