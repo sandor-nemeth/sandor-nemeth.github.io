@@ -1,5 +1,4 @@
 ---
-published: false
 title: Logging configuration from env variables in Spring Boot
 ---
 Today's big learning experience was with Spring Boot logging configuration. We wanted to adjust the configured logging level via an environment variable. As it is normally configured via a property in the syntax of `logging.level.com.acme=DEBUG`, we tried to use the normal environmental conversion of this name. Namingly: 
