@@ -82,4 +82,21 @@ l2pqciwayw07asybejsreiw16     swarm-2             Ready               Active
 r9fj3ampjky9qgol0ja72097t     swarm-3             Ready               Active
 ```
 
-As I said. Good to go!
+Now the next step is to deploy a small visualization tool for our swarm. 
+This will be the first service which we are deploying.
+
+```bash
+docker service create \
+  --name=visualizer \ 
+  --publish=8083:8080/tcp \
+  --constraint=node.role==manager \
+  --mount=type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \
+  dockersamples/visualizer
+```
+
+And if everything went well, then navigating to http://192.168.99.100:8083 
+should result in the following screen: 
+
+![Docker visualizer][visualizer]
+
+[visualizer]: {{ site.basurl }}/assets/images/docker_visualizer.png
