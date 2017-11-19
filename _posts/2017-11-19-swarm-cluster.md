@@ -94,7 +94,7 @@ docker service create \
   dockersamples/visualizer
 ```
 
-And if everything went well, then navigating to http://192.168.99.100:8083 
+And if everything went well, then navigating to [http://192.168.99.100:8083](http://192.168.99.100:8083)
 should result in the following screen: 
 
 ![Docker visualizer][visualizer]
