@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Creating a Swarm cluster
 layout: post
 ---
