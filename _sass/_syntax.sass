@@ -1,117 +1,125 @@
-div[class*='highlighter']
-  border: 1px solid $gray
-  border-radius: 4px
-  margin: 0
-  padding: 1em
-  font-size: .85rem
-  white-space: pre-wrap
-  white-space: -moz-pre-wrap
-  white-space: -pre-wrap
-  white-space: -o-pre-wrap
-  word-wrap: break-word
+div[class^="language-"]
+  background-color: #404040
+  font-size: .8em
+  font-weight: 300
+  color: white
+  padding-left: $gutter-height
+  padding-right: $gutter-height
+  margin-left: -1*$gutter-height
+  margin-right: -1*$gutter-height
   overflow-x: scroll
+  margin-bottom: $gutter-height
 
-  pre
-    margin: 0
-  .hll
-    background-color: #ffffcc
+pre.highlight
   .c
-    color: #999988
+    color: #999999
     font-style: italic
   .err
     color: #a61717
     background-color: #e3d2d2
-  .k, .o
-    color: #000000
+  .g
+    color: #d0d0d0
+  .k
+    color: #6ab825
     font-weight: bold
+  .l, .n, .o, .x, .p
+    color: #d0d0d0
   .cm
-    color: #999988
+    color: #999999
     font-style: italic
   .cp
-    color: #999999
+    color: #cd2828
     font-weight: bold
-    font-style: italic
   .c1
-    color: #999988
+    color: #999999
     font-style: italic
   .cs
-    color: #999999
+    color: #e50808
     font-weight: bold
-    font-style: italic
+    background-color: #520000
   .gd
-    color: #000000
-    background-color: #ffdddd
+    color: #d22323
   .ge
-    color: #000000
+    color: #d0d0d0
     font-style: italic
   .gr
-    color: #aa0000
+    color: #d22323
   .gh
-    color: #999999
+    color: #ffffff
+    font-weight: bold
   .gi
-    color: #000000
-    background-color: #ddffdd
+    color: #589819
   .go
-    color: #888888
+    color: #cccccc
   .gp
-    color: #555555
+    color: #aaaaaa
   .gs
+    color: #d0d0d0
     font-weight: bold
   .gu
-    color: #aaaaaa
+    color: #ffffff
+    text-decoration: underline
   .gt
-    color: #aa0000
-  .kc, .kd, .kn, .kp, .kr
-    color: #000000
+    color: #d22323
+  .kc, .kd, .kn
+    color: #6ab825
     font-weight: bold
-  .kt
-    color: #445588
+  .kp
+    color: #6ab825
+  .kr, .kt
+    color: #6ab825
     font-weight: bold
+  .ld
+    color: #d0d0d0
   .m
-    color: #009999
+    color: #3677a9
   .s
-    color: #d01040
+    color: #ed9d13
   .na
-    color: #008080
+    color: #bbbbbb
   .nb
-    color: #0086B3
+    color: #24909d
   .nc
-    color: #445588
-    font-weight: bold
+    color: #447fcf
+    text-decoration: underline
   .no
-    color: #008080
+    color: #40ffff
   .nd
-    color: #3c5d5d
-    font-weight: bold
+    color: #ffa500
   .ni
-    color: #800080
-  .ne, .nf, .nl
-    color: #990000
-    font-weight: bold
+    color: #d0d0d0
+  .ne
+    color: #bbbbbb
+  .nf
+    color: #447fcf
+  .nl
+    color: #d0d0d0
   .nn
-    color: #555555
+    color: #447fcf
+    text-decoration: underline
+  .nx, .py
+    color: #d0d0d0
   .nt
-    color: #000080
+    color: #6ab825
+    font-weight: bold
   .nv
-    color: #008080
+    color: #40ffff
   .ow
-    color: #000000
+    color: #6ab825
     font-weight: bold
   .w
-    color: #bbbbbb
+    color: #666666
   .mf, .mh, .mi, .mo
-    color: #009999
-  .sb, .sc, .sd, .s2, .se, .sh, .si, .sx
-    color: #d01040
-  .sr
-    color: #009926
-  .s1
-    color: #d01040
-  .ss
-    color: #990073
+    color: #3677a9
+  .sb, .sc, .sd, .s2, .se, .sh, .si
+    color: #ed9d13
+  .sx
+    color: #ffa500
+  .sr, .s1, .ss
+    color: #ed9d13
   .bp
-    color: #999999
+    color: #24909d
   .vc, .vg, .vi
-    color: #008080
+    color: #40ffff
   .il
-    color: #009999
+    color: #3677a9

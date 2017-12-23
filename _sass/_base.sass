@@ -1,41 +1,17 @@
-// Generic styles
-html, body
-    margin: 0
-    padding: 0
-    background-color: $bg-color
-    font-family: $body-font
-    font-size: 21px
-    line-height: 1.58
-    letter-spacing: -0.003em
-    color: $black
-    height: 100%
+html, body 
+  width: 100%
+  height: 100%
+  font-size: $base-font-size
+  font-family: $body-font
+  line-height: 1.5em
 
-img 
-    max-width: $content-width
-    
-h1, h2, h3, h4, h5, h6
-    font-family: $header-font
+h1, h2, h3, h4
+  margin-top: 0
+  font-family: $header-font
+  margin-bottom: $gutter-height
 
-.container 
-    width: $content-width
-    margin: 0 auto
-    padding: 5rem 0
-    
-a,a:visited
-    text-decoration: none
-    color: $text-color
-    border-bottom: 2px solid $primary
-    
-    &:hover
-        color: lighten($text-color, 35%)
-        
-blockquote
-    
-    border-left: 4px solid $alternative-color
-    margin: 1em 0
-    padding: 0 1em
-    
-    p
-        font-style: italic
-        color: $alternative-color
-    
+p
+  margin-top: 0
+  margin-bottom: $gutter-height
+  font-weight: 300
+
