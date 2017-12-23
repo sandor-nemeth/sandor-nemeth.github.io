@@ -27,7 +27,7 @@ swarm-3   -        virtualbox   Running   tcp://192.168.99.102:2376           v1
 
 If you see this, then we are good to go for the next step! Let's first log into the `swarm-1` node:
 
-```
+```bash
 docker-machine ssh swarm-1
 ```
 
@@ -37,10 +37,9 @@ and then initialize the Swarm:
 docker@swarm-1:~$ docker swarm init --advertise-addr 192.168.99.100
 ```
 
-
 The output will be something like :
 
-```
+```bash
 Swarm initialized: current node (gf08pznw2zs18tx6orb25tz4k) is now a manager.
 
 To add a worker to this swarm, run the following command:
