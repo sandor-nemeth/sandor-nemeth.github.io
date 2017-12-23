@@ -19,7 +19,7 @@ And I knew that the class was there, so I - and also my boss - just looked like 
 
 Turns out, that the guys at Surefire made a change from 2.18.1 to 2.19, namingly that they load the JAR file itself, instead of using the folders in `target/` especially the `target/classes` folder. In the same time, around 1.4 Spring also changed how they are packaging the applications, and now when you run the `spring-boot-maven-plugin`'s `repackage` goal, you'll end up having a JAR structure like this: 
 
-```
+```bash
 - BOOT-INF
   |- classes
      |- com/acme/YourClass.class  

@@ -114,7 +114,7 @@ I can write a file called `Brewfile` residing in my home directory, and there
 I can define all the things I want to have installed from brew, which is pretty
 neat. Here is how my Brewfile looks like at the moment:
 
-```
+```bash
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'homebrew/php'

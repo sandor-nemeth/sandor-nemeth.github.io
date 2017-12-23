@@ -403,7 +403,7 @@ public FilterRegistrationBean keycloakPreAuthActionsFilterRegistrationBean(
 And lastly we need to configure our application in the
 `application.properties` with the values we downloaded earlier:
 
-```
+```java
 server.port=9002
 
 keycloak.realm = spring-security-example
