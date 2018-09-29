@@ -2,9 +2,9 @@
 published: false
 title: Monitoring dashboards
 ---
-On Monday my boss come up with some very pointed questions about our monitoring wallboards. We talked about it for some time and then I had thought about them some more, and also about how we can organize them. 
+On Monday my boss come up with some very pointed questions about our monitoring wallboards. We talked about it for some time and then I had thought about them some more, because it is a problem that I couldn't really find instant good solutions over the large internet.
 
-But before all I wanted to categorize them, because that would give me a tangible idea when I am building the dashboards on what exactly do I want to visualize. 
+First I wanted to categorize the different kind of dashboards available, because that would give me a tangible idea on what I want to visualize (what is the target of the dashboard) when I am doing it. 
 
 In my view there are 3 different kind of dashboards depending on the target of the dashboard - that we could/should/would utilize:
 
