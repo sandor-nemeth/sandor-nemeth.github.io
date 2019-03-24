@@ -4,10 +4,21 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# Hi, I'm Sandor,
 
-You can find the source code for the Jekyll new theme at:
-[minima](https://github.com/jekyll/minima)
+and I use this place to collect all my thoughs about things that I am
+passionate about - quality engineering.
 
-You can find the source code for Jekyll at
-[jekyll](https://github.com/jekyll/jekyll)
+Most recently I am working at [Idealo](https://idealo.de), which
+provides me ample opportunities to hone the craft I love so much.
+
+# Get in touch
+
+If you want to discuss anything that you read about, or just simply want to
+have a beer when you are in Berlin, just reach out through any of these 
+channels:
+
+* Email me at sandor [dot] nemeth [dot] 1986 [at] gmail [dot] com
+* DM me on [Twitter](https://twitter.com/sandor_nemeth)
+* Add me on [LinkedIN](https://www.linkedin.com/in/sandornemeth/)
+* Or just take a look at my [Github repo](https://github.com/sandor-nemeth)

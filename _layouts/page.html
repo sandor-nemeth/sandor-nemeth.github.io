@@ -2,5 +2,11 @@
 <html lang="en-US" class="no-js">
 	{% include head.html %}
 	<body>
+        <div id="page-container">
+            {% include header.html %}
+            <section id="post-body">
+                {{ content }}
+            </section>
+        </div>
     </body>
 </html>
