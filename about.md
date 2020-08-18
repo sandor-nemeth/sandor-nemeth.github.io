@@ -9,7 +9,7 @@ permalink: /about/
 and I use this place to collect all my thoughs about things that I am
 passionate about - quality engineering.
 
-Most recently I am working at [Idealo](https://idealo.de), which
+Most recently I am working at [UP42](https://up42.com), which
 provides me ample opportunities to hone the craft I love so much.
 
 # Get in touch
